@@ -46,11 +46,11 @@ iframe#tela{
 }
 
 section#redes-sociais{
-    text-align: left;
+    text-align: right;
 }
 
 /* section#redes-sociais{  // versão do Guanabara
-    text-align: left;
+    text-align: rigth;
 } */                       /* deverá ser adicionado <br> ao final de cada link de imagem. exemplo: </a><br>  */ 
 
 section#redes-sociais img{
