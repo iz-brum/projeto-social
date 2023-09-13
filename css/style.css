@@ -44,3 +44,36 @@ iframe#tela{
     width: 265px;
 
 }
+
+section#redes-sociais{
+    text-align: center;
+}
+
+/* section#redes-sociais{  // versão do Guanabara
+    text-align: left;
+} */                       /* deverá ser adicionado <br> ao final de cada link de imagem. exemplo: </a><br>  */ 
+
+section#redes-sociais img{
+    height: 50px;
+    margin: 10px;
+
+    border-radius: 50%; /* Transfoma uma imagem quadrada em um círculo. */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.355);
+    box-sizing: border-box;  
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(245, 245, 245, 0.64);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.355);
+    
+    transform: translate(1px, 2px);
+    transition: .4s, border .5s;
+}
+
+/*
+A propriedade box-sizing: border-box; é uma regra do CSS que afeta como o tamanho de um elemento é calculado. Quando essa regra é aplicada a um elemento, o tamanho total do elemento inclui o conteúdo, o padding e a borda, sem que haja alteração no tamanho total especificado.
+
+Em resumo, ao usar box-sizing: border-box;, você está dizendo ao navegador para incluir o padding e a borda dentro do tamanho especificado para o elemento, em vez de adicionar esses valores ao tamanho total.
+
+Isso pode ser útil para manter um layout mais previsível e facilitar a manipulação de elementos em um design responsivo.
+*/
