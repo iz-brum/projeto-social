@@ -13,7 +13,7 @@ html, body{
 }
 
 body{
-    background: url("../imagens/pexels-wall-background.jpeg") no-repeat top center;
+    background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -28,7 +28,7 @@ section#telefone{
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.85);
 
     height: 627px;
     width: 311px;
@@ -45,13 +45,14 @@ iframe#tela{
 
 }
 
-section#redes-sociais{
-    text-align: center;
-}
-
-/* section#redes-sociais{  // versão do Guanabara
-    text-align: rigth;
-} */                       /* deverá ser adicionado <br> ao final de cada link de imagem. exemplo: </a><br>  */ 
+section#redes-sociais{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh; /* Torna a section do tamanho da viewport */
+    margin: auto; /* Centraliza horizontalmente */
+}                       
 
 section#redes-sociais img{
     height: 50px;
@@ -60,6 +61,8 @@ section#redes-sociais img{
     border-radius: 50%; /* Transfoma uma imagem quadrada em um círculo. */
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.355);
     box-sizing: border-box;  
+
+    
 }
 
 section#redes-sociais img:hover{
@@ -69,6 +72,8 @@ section#redes-sociais img:hover{
     transform: translate(1px, 2px);
     transition: .4s, border .5s;
 }
+
+
 
 /*
 A propriedade box-sizing: border-box; é uma regra do CSS que afeta como o tamanho de um elemento é calculado. Quando essa regra é aplicada a um elemento, o tamanho total do elemento inclui o conteúdo, o padding e a borda, sem que haja alteração no tamanho total especificado.
